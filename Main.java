@@ -10,7 +10,9 @@ public class Main {
                 break;
             }
             if (Novita_ValidasiInfix.isValidInfix(input)) {
-                System.out.println("Notasi infix valid.");
+                System.out.println("Notasi infix valid. " + input);
+                String postfix = Ratson_InfixtoPostfix.toPostfix(input);
+                System.out.println("Postfix: " + postfix);
             } else {
                 System.out.println("Notasi infix TIDAK valid.");
             }
