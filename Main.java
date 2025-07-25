@@ -11,8 +11,12 @@ public class Main {
             }
             if (Novita_ValidasiInfix.isValidInfix(input)) {
                 System.out.println("Notasi infix valid. " + input);
+                
                 String postfix = Ratson_InfixtoPostfix.toPostfix(input);
                 System.out.println("Postfix: " + postfix);
+
+                String prefix = Axel_InfixtoPrefix.toPrefix(input);
+                System.out.println("Prefix: " + prefix);
             } else {
                 System.out.println("Notasi infix TIDAK valid.");
             }
