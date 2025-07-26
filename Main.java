@@ -14,9 +14,13 @@ public class Main {
                 
                 String postfix = Ratson_InfixtoPostfix.toPostfix(input);
                 System.out.println("Postfix: " + postfix);
+                double hasilPostfix = Ratson_EvaluasiPostfix.evaluatePostfix(postfix);
+                System.out.println("Hasil Postfix: " + hasilPostfix);
 
                 String prefix = Axel_InfixtoPrefix.toPrefix(input);
                 System.out.println("Prefix: " + prefix);
+                double hasilPrefix = Axel_EvaluasiPrefix.evaluatePrefix(prefix);
+                System.out.println("Hasil Prefix: " + hasilPrefix);
             } else {
                 System.out.println("Notasi infix TIDAK valid.");
             }
